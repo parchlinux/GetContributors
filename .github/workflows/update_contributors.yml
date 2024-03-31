@@ -7,12 +7,29 @@ on:
 
 jobs:
   run_ruby_script:
-    runs-on: ubuntu-latest 
+    runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3  
+      - uses: actions/checkout@v3
       - name: Install Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '3.3.0' 
+          ruby-version: '3.3.0'
+      - name: Install Bundler
+        run: |
+          gem list bundle
+      - name: Bundle install dependencies
+        run: bundle install  
+      - name: Set environment variable (securely)
+        # **Security:** Use secrets management to store and retrieve sensitive data
+        # https://docs.github.com/en/actions/security/secrets-management
+        uses: actions/checkout@v3
+        with:
+          repository: ${{ secrets.GITHUBPA }} 
+          ref: ${{ secrets.main }}
+        run: |
+          echo "::group::"
+          echo "Setting GITHUB_PERSONAL_ACCESS_TOKEN..."
+          echo "GITHUB_PERSONAL_ACCESS_TOKEN=${{ secrets.GITHUBPA }}" >> $GITHUB_ENV  # Store token securely
+          echo "::endgroup::"
       - name: Update contributors list
         run: ruby main.rb
