@@ -1,0 +1,15 @@
+on:
+  schedule:
+    cron: "0 0 */3 * *"  # Runs at midnight (0:00) every 3rd day
+
+jobs:
+  run_ruby_script:
+    runs-on: ubuntu-latest 
+    steps:
+      - uses: actions/checkout@v3  
+      - name: Install Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.3.0' 
+      - name: Update contributors list
+        run: ruby main.rb
