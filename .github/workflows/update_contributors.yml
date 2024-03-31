@@ -1,6 +1,6 @@
 on:
   schedule:
-    cron: "0 0 */3 * *"  # Runs at midnight (0:00) every 3rd day
+    - cron: "0 0 */3 * *"  # Runs at midnight (0:00) every 3rd day
 
 jobs:
   run_ruby_script:
