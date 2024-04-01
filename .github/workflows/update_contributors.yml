@@ -26,10 +26,10 @@ jobs:
           echo "GITHUB_PERSONAL_ACCESS_TOKEN=${{ secrets.GITHUBPA }}" >> $GITHUB_ENV  # Store token securely
           echo "::endgroup::"
       - name: Update contributors list
-        run: ruby main.rb
-      - name: Commit and push new contributors.json
         run: |
-          git config --global user.email "github_actions@mail.com"
-          git config --global user.name "github actions"
-          git add json/contributors.json
-          git commit -m "fix: update contributors list at json/contributors.json"
+          chmod +x main.rb
+          ruby main.rb
+      - uses: actions/upload-artifact@v4
+        with:
+          name: Contributors List
+          path: ./json/contributors.json
