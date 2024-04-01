@@ -1,8 +1,8 @@
-require 'octokit'
+require "octokit"
 
 module GetContributors
   def self.has_contributor?(list, username)
-    list.find { |c| c[:username] == username} != nil
+    list.find { |c| c[:username] == username } != nil
   end
 
   def self.get_contributors(github_pa, org_name)
@@ -10,7 +10,7 @@ module GetContributors
 
     contributors = []
 
-    repos = client.org_repos(org_name)
+    repos = client.org_repos(org_name, { :per_page => 500 })
 
     repos.each do |repo|
       begin
