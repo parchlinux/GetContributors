@@ -29,7 +29,14 @@ jobs:
         run: |
           chmod +x main.rb
           ruby main.rb
-      - uses: actions/upload-artifact@v4
+      - name: Commit changes
+        run: |
+          git config --local user.name "tahadostifam"
+          git config --local user.email "mr.tahadostifam@gmail.com"
+          git add ./json/contributors.json
+          git commit -m "Contributors list located at json/contributors.json updated by github-worfklow"
+      - name: Push changes # push the output folder to your repo
+        uses: ad-m/github-push-action@master
         with:
-          name: Contributors List
-          path: ./json/contributors.json
+          github_token: ${{ secrets.GITHUBPA }}
+          force: true
