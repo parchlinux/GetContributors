@@ -1,0 +1,42 @@
+on:
+  push:
+    branches:
+      - main
+  schedule:
+    - cron: "0 0 */3 * *"  # Runs at midnight (0:00) every 3rd day
+
+jobs:
+  run_ruby_script:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Install Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.3.0'
+      - name: Install Bundler
+        run: |
+          gem list bundle
+      - name: Bundle install dependencies
+        run: bundle install  
+      - name: Set environment variable (securely)
+        run: |
+          echo "::group::"
+          echo "Setting GITHUB_PERSONAL_ACCESS_TOKEN..."
+          echo "GITHUB_PERSONAL_ACCESS_TOKEN=${{ secrets.GITHUBPA }}" >> $GITHUB_ENV  # Store token securely
+          echo "::endgroup::"
+      - name: Update contributors list
+        run: |
+          chmod +x main.rb
+          ruby main.rb
+      - name: Commit changes
+        run: |
+          git config --local user.name "tahadostifam"
+          git config --local user.email "mr.tahadostifam@gmail.com"
+          git add ./json/contributors.json
+          git commit -m "Contributors list located at json/contributors.json updated by github-worfklow"
+      - name: Push changes # push the output folder to your repo
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUBPA }}
+          force: true
