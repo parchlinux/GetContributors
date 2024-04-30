@@ -1,1 +1,141 @@
-{}
+[
+  {
+    "name": "Sohrab Behdani",
+    "stack": "Founder",
+    "image": "https://avatars.githubusercontent.com/behdanisohrab",
+    "socials": {
+      "socials": "https://twitter.com/sbehdani",
+      "github": "https://github.com/behdanisohrab",
+      "mastodon": "https://mas.to/@sohrabbehdani",
+      "donate": "https://daramet.com/sohrabbehdani"
+    }
+  },
+  {
+    "name": "Parsa",
+    "stack": "Founder",
+    "image": "https://avatars.githubusercontent.com/metantesan",
+    "socials": {
+      "github": "https://github.com/metantesan",
+      "mastodon": "https://mas.to/@metantesan",
+      "donate": "https://daramet.com/hikari"
+    }
+  },
+  {
+    "name": "Hamid Reza",
+    "stack": "maintainer",
+    "image": "https://avatars.githubusercontent.com/HRMCA",
+    "socials": {
+      "github": "https://github.com/HRMCA",
+      "mastodon": "https://mas.to/@HRM_CA"
+    }
+  },
+  {
+    "name": "Shahriar Ghasem Poor",
+    "stack": "maintainer",
+    "image": "https://avatars.githubusercontent.com/shahriaarrr",
+    "socials": {
+      "socials": "https://twitter.com/shahriaarrr",
+      "github": "https://github.com/shahriaarrr"
+    }
+  },
+  {
+    "name": "Javid Izadi",
+    "stack": "Contributer",
+    "image": "https://avatars.githubusercontent.com/javidizadi",
+    "socials": {
+      "github": "https://github.com/javidizadi",
+      "mastodon": "https://khiar.net/@alen_j05",
+      "donate": "https://daramet.com/javidizadi"
+    }
+  },
+  {
+    "name": "AhmadReza Khatamian",
+    "stack": "Graphic Designer",
+    "image": "https://avatars.githubusercontent.com/ahmadreza3",
+    "socials": {
+      "github": "https://github.com/ahmadreza3"
+    }
+  },
+  {
+    "name": "Taha Dostifam",
+    "stack": "Font-End Developer",
+    "image": "https://avatars.githubusercontent.com/tahadostifam",
+    "socials": {
+        "github": "https://github.com/tahadostifam",
+        "donate": "https://daramet.com/tahadostifam",
+        "socials": "https://twitter.com/taha__dev"
+    }
+  },
+  {
+    "name": "Alireza Sadeghi",
+    "stack": "Web Developer",
+    "image": "https://avatars.githubusercontent.com/alirezawdx",
+    "socials": {
+      "github": "https://github.com/alirezawdx",
+      "donate": "https://daramet.com/alirezawdx"
+    }
+  },
+  {
+    "name": "Pourya Barkati",
+    "stack": "Rust Developer",
+    "image": "https://avatars.githubusercontent.com/BrPrS",
+    "socials": {
+      "github": "https://github.com/BrPrS",
+      "donate": "https://daramet.com/prbarkati"
+    }
+  },
+  {
+    "name": "Pouya Madankar",
+    "stack": "Frontend Developer",
+    "image": "https://avatars.githubusercontent.com/pouyaMK",
+    "socials": {
+      "github": "https://github.com/pouyaMK"
+    }
+  },
+  {
+    "name": "Mohammad Ehsan Nafari",
+    "stack": "Ui/Ux Designer",
+    "image": "https://avatars.githubusercontent.com/menafar2005",
+    "socials": {
+      "github": "https://github.com/menafar2005",
+      "donate": "https://daramet.com/viraa"
+    }
+  },
+  {
+    "name": "Mostafa Aminzar",
+    "stack": "Ui/Ux Designer",
+    "image": "https://avatars.githubusercontent.com/MosiO1998",
+    "socials": {
+      "github": "https://github.com/MosiO1998",
+      "donate": "https://daramet.com/mosio"
+    }
+  },
+  {
+    "name": "Ali Mohammad Esmaeeli",
+    "stack": "Frontend Developer",
+    "image": "https://avatars.githubusercontent.com/AliMohammad-Esmaeeli",
+    "socials": {
+      "github": "https://github.com/AliMohammad-Esmaeeli",
+      "socials": "https://twitter.com/AliMoha03254987"
+    }
+  },
+  {
+    "name": "Ali Almasi",
+    "stack": "Web Developer",
+    "image": "https://avatars.githubusercontent.com/AliAlmasi",
+    "socials": {
+      "github": "https://github.com/AliAlmasi",
+      "donate": "https://daramet.com/alialmasi"
+    }
+  },
+  {
+    "name": "Erfan Arabi",
+    "stack": "Contributer",
+    "image": "https://avatars.githubusercontent.com/ERFouX",
+    "socials": {
+      "github": "https://github.com/ERFouX",
+      "mastodon": "https://mas.to/@ERFouX",
+      "donate": "https://daramet.com/ERFouX"
+    }
+  }
+]
