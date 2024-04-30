@@ -4,7 +4,7 @@
     "stack": "Founder",
     "image": "https://avatars.githubusercontent.com/behdanisohrab",
     "socials": {
-      "socials": "https://twitter.com/sbehdani",
+      "twitter": "https://twitter.com/sbehdani",
       "github": "https://github.com/behdanisohrab",
       "mastodon": "https://mas.to/@sohrabbehdani",
       "donate": "https://daramet.com/sohrabbehdani"
@@ -34,7 +34,7 @@
     "stack": "maintainer",
     "image": "https://avatars.githubusercontent.com/shahriaarrr",
     "socials": {
-      "socials": "https://twitter.com/shahriaarrr",
+      "twitter": "https://twitter.com/shahriaarrr",
       "github": "https://github.com/shahriaarrr"
     }
   },
@@ -63,7 +63,7 @@
     "socials": {
         "github": "https://github.com/tahadostifam",
         "donate": "https://daramet.com/tahadostifam",
-        "socials": "https://twitter.com/taha__dev"
+        "twitter": "https://twitter.com/taha__dev"
     }
   },
   {
