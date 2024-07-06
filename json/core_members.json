@@ -117,6 +117,16 @@
       "github": "https://github.com/ERFouX",
       "mastodon": "https://mas.to/@ERFouX",
       "donate": "https://daramet.com/ERFouX"
-    }
-  }
+      }
+    },
+    {
+      "name": "meshya",
+      "stack": "Contributer",
+      "image": "https://avatars.githubusercontent.com/meshya",
+      "socials": {
+        "github": "https://github.com/meshya",
+        "mastodon": "https://mas.to/@meshya",
+        "donate": "https://daramet.com/meshya"
+      }
+     }
 ]
